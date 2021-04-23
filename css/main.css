@@ -1,0 +1,106 @@
+
+.body{
+    font-family: 'Nunito', sans-serif;
+}
+
+.nav-item a{
+    color: white;
+}
+li.active a{
+    color: #D8576F;
+    }
+.navbar-brand img{
+    height: 27px;
+}
+.nav-item:hover a{
+    color: #D8576F;
+}  
+.navbar{
+    background-color:transparent;
+} 
+.layout{
+    background-color: rgba(0, 0, 0, 0.69);
+    height: 100%;
+}
+.caption{
+    background-image: url(../images/header-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 600px;
+
+}
+.btn-caption{
+    border: 3px solid white;
+    background-color: transparent;
+    color: white;
+    transition: 1s all;
+}
+.btn-caption:hover{
+    background-color: white;
+    color: black;
+}
+.caption-text span{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.caption-text p{
+    line-height: 40px;
+}
+.caption-move{
+    width: 25px;
+    height: 40px;
+    left:50%;
+    bottom: 40px;
+    transform:translateX(-50%);
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+@keyframes move{
+    0%{bottom:40px;}
+    50%{bottom: 10px;}
+    100%{bottom: 40px;}
+}
+.setting{
+    position: fixed;
+    top:20%;
+    left: 0;
+    background-color: #2B2424;
+}
+
+.first{
+    animation-name: kerri;
+}
+.second{
+    animation-name: graphic;
+}
+.third{
+    animation-name: photog;
+    border-right: 1px solid white;
+}
+.first,.second,.third{
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(25);
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+@keyframes kerri{
+    0%,35%,70%,100%{width: 0ch;}
+    4%,32%{width:8ch;}
+}
+@keyframes graphic{
+    0%,35%,70%,100%{width: 0ch;}
+    38%,68%{width:16ch;}
+
+}
+@keyframes photog{
+    0%,35%,70%,100%{width: 0ch;}
+    73%,98%{width:14ch;}
+
+
+}
